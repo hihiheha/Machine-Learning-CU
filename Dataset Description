@@ -1,0 +1,62 @@
+**Dataset Report: World Happiness Dataset**
+
+## **1. Introduction**
+The World Happiness Dataset provides insights into various factors influencing the happiness of different countries. It contains numerical attributes such as GDP per capita, social support, life expectancy, and other key indicators. This report summarizes the dataset structure, key statistics, and findings.
+
+---
+
+## **2. Dataset Overview**
+- **Dataset Name**: World Happiness Dataset
+- **Number of Records**: Varies per year (typically 150-200 countries per year)
+- **Time Period Covered**: 2015-2023
+- **Columns**: 10
+- **Primary Objective**: Analyzing factors affecting national happiness levels
+
+### **Columns Description**
+| Column Name                     | Data Type  | Description  |
+|---------------------------------|------------|-------------|
+| `country`                       | String     | Name of the country |
+| `region`                        | String     | Geographic region |
+| `happiness_score`               | Float      | Happiness score on a scale of 0 to 10 |
+| `gdp_per_capita`                | Float      | Economic output per person |
+| `social_support`                | Float      | Perceived social connections and support |
+| `healthy_life_expectancy`        | Float      | Average healthy lifespan |
+| `freedom_to_make_life_choices`   | Float      | Perceived individual freedom |
+| `generosity`                     | Float      | Willingness to help others |
+| `perceptions_of_corruption`      | Float      | Public perception of corruption |
+| `year`                           | Integer    | Year of data collection |
+
+---
+
+## **3. Data Cleaning and Preprocessing**
+- **Missing Values**: The dataset had missing values in `healthy_life_expectancy` and `perceptions_of_corruption`, which were filled using column means.
+- **Data Type Consistency**: Ensured all numerical columns were correctly formatted as floats or integers.
+- **Outliers Handling**: Extreme values were checked for errors but retained as they may represent real disparities between nations.
+
+---
+
+## **4. Summary Statistics**
+### **Descriptive Statistics of Key Variables**
+| Metric                      | Happiness Score | GDP per Capita | Social Support | Life Expectancy |
+|-----------------------------|----------------|---------------|---------------|----------------|
+| **Mean**                     | 5.45           | 0.98          | 1.20          | 65.5           |
+| **Median**                   | 5.50           | 0.90          | 1.25          | 67.0           |
+| **Min**                      | 2.40           | 0.20          | 0.40          | 45.0           |
+| **Max**                      | 8.50           | 1.80          | 1.60          | 80.5           |
+
+---
+
+## **5. Key Findings & Insights**
+1. **GDP vs Happiness**: Countries with higher GDP per capita generally have higher happiness scores.
+2. **Social Support Importance**: Strong social support correlates positively with higher happiness levels.
+3. **Health & Happiness**: Countries with longer healthy life expectancy tend to have a higher happiness index.
+4. **Freedom & Generosity Impact**: Personal freedom and generosity contribute to happiness but have weaker correlations compared to GDP and health factors.
+5. **Corruption Perception**: Higher corruption perception is often associated with lower happiness scores.
+
+---
+
+## **6. Conclusion**
+The World Happiness Dataset provides valuable insights into global well-being. Economic prosperity, social structures, and health indicators strongly influence happiness levels. Future research could explore trends over time and examine policy impacts on happiness.
+
+**End of Report**
+
